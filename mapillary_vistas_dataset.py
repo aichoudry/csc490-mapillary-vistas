@@ -26,6 +26,7 @@ class MapillaryVistasDataset(Dataset):
   NUM_CLASSES = len(color_to_i)
   
   TRAINING = "TRAINING"
+  TESTING = "TESTING"
   VALIDATION = "VALIDATION"
 
   config = {
@@ -36,7 +37,11 @@ class MapillaryVistasDataset(Dataset):
     VALIDATION: [
         ROOT_DIR + '/validation/images',
         ROOT_DIR + '/validation/labels'
-    ]
+    ],
+    TESTING: [
+        ROOT_DIR + '/testing/images',
+        ROOT_DIR + '/testing/labels'
+    ],
   }
 
   def __init__(self, dataset=TRAINING, max_images=None, transform=None, mask_transform=None):
@@ -49,6 +54,8 @@ class MapillaryVistasDataset(Dataset):
 
     self.image_files = sorted(os.listdir(self.image_dir))[:max_images]
     self.mask_files = sorted(os.listdir(self.mask_dir))[:max_images]
+    if dataset == self.TESTING:
+        print(self.mask_dir, os.listdir(self.mask_dir))
 
     self.transform = transform
     self.mask_transform = mask_transform

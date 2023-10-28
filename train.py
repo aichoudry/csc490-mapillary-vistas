@@ -2,6 +2,7 @@ import torch
 from tqdm.notebook import tqdm
 import os
 from datetime import datetime
+from evaluation import mean_iou
 
 
 def train_model(model, epochs, learning_rate, criterion, training_loader, optimizer, device, name, epoch_save_interval=10, checkpoint_path=None, save=True):
@@ -27,7 +28,7 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
         total = 0
 
         total_batches = len(training_loader)
-        interval = int(total_batches * 0.01)
+        interval = int(total_batches * 0.30)
         if interval == 0:
             interval = 1
 
@@ -52,7 +53,7 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
 
             # Calculate accuracy
             _, predicted = torch.max(outputs.data, 1)
-            total += masks.size(0) * masks.size(2) * masks.size(2)  # assuming masks are of shape (batch_size, height, width)
+            total += masks.numel()  # assuming masks are of shape (batch_size, height, width)
             correct += (predicted == masks).sum().item()
 
             running_loss += loss.item() * images.size(0)
@@ -72,8 +73,8 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
                     'epoch': epoch + 1,
                     'state_dict': model.state_dict(),
                     'optimizer': optimizer.state_dict(),
-                    'loss': epoch_loss,
-                    'accuracy': epoch_accuracy
+                    'loss': accuracies,
+                    'accuracy': accuracies
                 }, checkpoint_save)
                 print(f"Checkpoint {epoch+1} saved to {checkpoint_save}")
             except:
@@ -84,7 +85,12 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
 
 
     if save:
-        torch.save(model.state_dict(), os.path.join(model_directory, f'{name}.pth'))
+        result = {
+            'state_dict': model.state_dict(),
+            'accuracies': accuracies,
+            'losses': losses
+        }
+        torch.save(result, os.path.join(model_directory, f'{name}.pth'))
     
     return accuracies, losses
 
