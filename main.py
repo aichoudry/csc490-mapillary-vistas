@@ -2,7 +2,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 from mapillary_vistas_dataset import MapillaryVistasDataset
 
-MAX_IMAGES = 8000
+MAX_IMAGES = 2000
 IMAGE_DIMEN = 256
 BATCH_SIZE = 16
 
@@ -45,7 +45,7 @@ optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 LOAD_CHECKPOINT_PATH = None
 
-accuracies, losses = train_model(model=model, 
+model_info = train_model(model=model, 
                                  epochs=EPOCHS, 
                                  learning_rate=LEARNING_RATE, 
                                  criterion=CRITERION, 
@@ -55,6 +55,8 @@ accuracies, losses = train_model(model=model,
                                  name=MODEL_NAME, 
                                  checkpoint_path=LOAD_CHECKPOINT_PATH, 
                                  save=True)
+
+
 
 from evaluation import evaluate_model
 from mapillary_vistas_dataset import MapillaryVistasDataset
@@ -69,7 +71,10 @@ if SAVED_MODEL_NAME:
     saved_model_path = f"/virtual/csc490_mapillary/models/{SAVED_MODEL_NAME}/{SAVED_MODEL_NAME}.pth"
     print(f"Evaluating {saved_model_path}...")
     model = UNet(in_channels=3, out_channels=MapillaryVistasDataset.NUM_CLASSES).to(device)
-    model.load_state_dict(torch.load(saved_model_path))
+    model_info = torch.load(saved_model_path)
+    model.load_state_dict(model_info['state_dict'])
+    print(f"Accuracies: {model_info['accuracies']}")
+    print(f"Losses: {model_info['losses']}")
 else:
     print(f"Evaluating {SAVED_MODEL_NAME}..")
 
@@ -78,7 +83,7 @@ model.eval()
 validation_dataset = MapillaryVistasDataset(MapillaryVistasDataset.VALIDATION,
                                             transform=IMAGE_TRANSFORM,
                                             mask_transform=MAKS_TRANSFORM)
-validation_loader = DataLoader(validation_dataset, batch_size=16, shuffle=True)
+validation_loader = DataLoader(validation_dataset, batch_size=BATCH_SIZE, shuffle=True)
 mIoU_value = evaluate_model(model, 
                             validation_loader, 
                             device, 

@@ -25,7 +25,8 @@ def evaluate_model(model, dataloader, device, num_classes):
 
     with torch.no_grad():
         for i, (images, masks) in enumerate(dataloader):
-            print(f"{i}/{len(dataloader)}")
+            if i % 5 == 0:
+                print(f"Testing Image: {i}/{len(dataloader)}")
             images, masks = images.to(device), masks.to(device)
             outputs = model(images)
             total_mIoU += mean_iou(outputs, masks, num_classes)
