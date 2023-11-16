@@ -21,7 +21,7 @@ config.read("./train.ini")
 MAX_IMAGES = config.getint("Hyperparameters", "MaxTrainingImages")
 BATCH_SIZE = config.getint("Hyperparameters", "BatchSize")
 
-LEARNING_RATE = config.getfloat("Hyperparameters", "BatchSize")
+LEARNING_RATE = config.getfloat("Hyperparameters", "LearningRate")
 EPOCHS = config.getint("Hyperparameters", "Epochs")
 
 IMAGE_DIMEN = config.getint("Image Preprocessing", "N")
