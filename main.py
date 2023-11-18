@@ -106,8 +106,7 @@ plot_graph(data=TRAINING_ACCURACIES,
 # Evaluate the model
 TRAINED_MODEL.eval()
 validation_dataset = MapillaryVistasDataset(MapillaryVistasDataset.VALIDATION, 
-                                            transform=TRANSFORM, 
-                                            max_images=5)
+                                            transform=TRANSFORM)
 validation_loader = DataLoader(validation_dataset, 
                                batch_size=BATCH_SIZE, 
                                shuffle=True, 
