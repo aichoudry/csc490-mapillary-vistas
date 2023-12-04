@@ -36,5 +36,5 @@ See the folders prefixed with _model_ _unet_ to see results of specific models.
 #### Contribution
 **Abdurrahman Choudry:** Built the UNet model and created the main scripts for transforming, training and testing it. My focus was on researching and testing different loss functions (weighted) and data augmentation methods/image transformations we could do to minmize the time to train and memory usage while also maintain or increase accuracy  
 **Matthew Ho Kin:** First through the research of the UNet model and then all the development and training of the Resnet-UNet model using the Fastai library.  
-**Ryan D’Rosario:**  
+**Ryan D’Rosario:** Worked on getting the values for the hyperparameters to optimize the model.  
 **Hanchao Ge:**  
