@@ -1,0 +1,10 @@
+Training unet-18000-256-20-crop-150-1e-05...
+epochs=150 lr=1e-05, error=<function cross_entropy at 0x7f9d90bef9a0>
+    [0] Processed 0/900 batches (0.00%)
+    [0] Processed 270/900 batches (30.00%)
+    [0] Processed 540/900 batches (60.00%)
+    [0] Processed 810/900 batches (90.00%)
+Checkpoint 1 saved to /virtual/drosari3/models/unet-18000-256-20-crop-150-1e-05/unet-18000-256-20-crop-150-1e-05-checkpoint_epoch_1.pth
+[15:44:11] Epoch [1/150] Loss: 2.3525 Accuracy: 44.15%
+    [1] Processed 0/900 batches (0.00%)
+    [1] Processed 270/900 batches (30.00%)

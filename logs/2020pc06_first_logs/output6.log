@@ -1,0 +1,54 @@
+Training unet-18000-256-20-crop-150-000025...
+epochs=150 lr=0.00025, error=<function cross_entropy at 0x7f18a9307ac0>
+    [0] Processed 0/900 batches (0.00%)
+    [0] Processed 270/900 batches (30.00%)
+    [0] Processed 540/900 batches (60.00%)
+    [0] Processed 810/900 batches (90.00%)
+Checkpoint 1 saved to /virtual/drosari3/models/unet-18000-256-20-crop-150-000025/unet-18000-256-20-crop-150-000025-checkpoint_epoch_1.pth
+[21:03:13] Epoch [1/150] Loss: 1.6745 Accuracy: 58.39%
+    [1] Processed 0/900 batches (0.00%)
+    [1] Processed 270/900 batches (30.00%)
+    [1] Processed 540/900 batches (60.00%)
+    [1] Processed 810/900 batches (90.00%)
+[21:13:56] Epoch [2/150] Loss: 1.4250 Accuracy: 63.22%
+    [2] Processed 0/900 batches (0.00%)
+    [2] Processed 270/900 batches (30.00%)
+    [2] Processed 540/900 batches (60.00%)
+    [2] Processed 810/900 batches (90.00%)
+[21:24:38] Epoch [3/150] Loss: 1.3007 Accuracy: 66.27%
+    [3] Processed 0/900 batches (0.00%)
+    [3] Processed 270/900 batches (30.00%)
+    [3] Processed 540/900 batches (60.00%)
+    [3] Processed 810/900 batches (90.00%)
+[21:35:21] Epoch [4/150] Loss: 1.1754 Accuracy: 70.03%
+    [4] Processed 0/900 batches (0.00%)
+    [4] Processed 270/900 batches (30.00%)
+    [4] Processed 540/900 batches (60.00%)
+    [4] Processed 810/900 batches (90.00%)
+[21:46:03] Epoch [5/150] Loss: 1.0868 Accuracy: 72.48%
+    [5] Processed 0/900 batches (0.00%)
+    [5] Processed 270/900 batches (30.00%)
+    [5] Processed 540/900 batches (60.00%)
+    [5] Processed 810/900 batches (90.00%)
+[21:56:46] Epoch [6/150] Loss: 1.0345 Accuracy: 73.81%
+    [6] Processed 0/900 batches (0.00%)
+    [6] Processed 270/900 batches (30.00%)
+    [6] Processed 540/900 batches (60.00%)
+    [6] Processed 810/900 batches (90.00%)
+[22:07:28] Epoch [7/150] Loss: 0.9927 Accuracy: 74.72%
+    [7] Processed 0/900 batches (0.00%)
+    [7] Processed 270/900 batches (30.00%)
+    [7] Processed 540/900 batches (60.00%)
+    [7] Processed 810/900 batches (90.00%)
+[22:18:10] Epoch [8/150] Loss: 0.9589 Accuracy: 75.48%
+    [8] Processed 0/900 batches (0.00%)
+    [8] Processed 270/900 batches (30.00%)
+    [8] Processed 540/900 batches (60.00%)
+    [8] Processed 810/900 batches (90.00%)
+[22:28:53] Epoch [9/150] Loss: 0.9280 Accuracy: 76.13%
+    [9] Processed 0/900 batches (0.00%)
+    [9] Processed 270/900 batches (30.00%)
+    [9] Processed 540/900 batches (60.00%)
+    [9] Processed 810/900 batches (90.00%)
+[22:39:36] Epoch [10/150] Loss: 0.9001 Accuracy: 76.73%
+    [10] Processed 0/900 batches (0.00%)

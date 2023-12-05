@@ -1,0 +1,197 @@
+Training unet-18000-256-16-crop-50-00001...
+epochs=50 lr=0.0001, error=<function cross_entropy at 0x7f37055efa30>
+    [0] Processed 0/1125 batches (0.00%)
+    [0] Processed 337/1125 batches (29.96%)
+    [0] Processed 674/1125 batches (59.91%)
+    [0] Processed 1011/1125 batches (89.87%)
+Checkpoint 1 saved to /virtual/drosari3/models/unet-18000-256-16-crop-50-00001/unet-18000-256-16-crop-50-00001-checkpoint_epoch_1.pth
+[12:43:16] Epoch [1/50] Loss: 1.7695 Accuracy: 56.51%
+    [1] Processed 0/1125 batches (0.00%)
+    [1] Processed 337/1125 batches (29.96%)
+    [1] Processed 674/1125 batches (59.91%)
+    [1] Processed 1011/1125 batches (89.87%)
+[13:33:43] Epoch [2/50] Loss: 1.4677 Accuracy: 62.38%
+    [2] Processed 0/1125 batches (0.00%)
+    [2] Processed 337/1125 batches (29.96%)
+    [2] Processed 674/1125 batches (59.91%)
+    [2] Processed 1011/1125 batches (89.87%)
+[14:23:55] Epoch [3/50] Loss: 1.3153 Accuracy: 66.38%
+    [3] Processed 0/1125 batches (0.00%)
+    [3] Processed 337/1125 batches (29.96%)
+    [3] Processed 674/1125 batches (59.91%)
+    [3] Processed 1011/1125 batches (89.87%)
+[15:13:47] Epoch [4/50] Loss: 1.2018 Accuracy: 69.59%
+    [4] Processed 0/1125 batches (0.00%)
+    [4] Processed 337/1125 batches (29.96%)
+    [4] Processed 674/1125 batches (59.91%)
+    [4] Processed 1011/1125 batches (89.87%)
+[16:03:20] Epoch [5/50] Loss: 1.1118 Accuracy: 71.92%
+    [5] Processed 0/1125 batches (0.00%)
+    [5] Processed 337/1125 batches (29.96%)
+    [5] Processed 674/1125 batches (59.91%)
+    [5] Processed 1011/1125 batches (89.87%)
+[16:52:36] Epoch [6/50] Loss: 1.0577 Accuracy: 73.24%
+    [6] Processed 0/1125 batches (0.00%)
+    [6] Processed 337/1125 batches (29.96%)
+    [6] Processed 674/1125 batches (59.91%)
+    [6] Processed 1011/1125 batches (89.87%)
+[17:42:00] Epoch [7/50] Loss: 1.0144 Accuracy: 74.26%
+    [7] Processed 0/1125 batches (0.00%)
+    [7] Processed 337/1125 batches (29.96%)
+    [7] Processed 674/1125 batches (59.91%)
+    [7] Processed 1011/1125 batches (89.87%)
+[18:31:40] Epoch [8/50] Loss: 0.9700 Accuracy: 75.31%
+    [8] Processed 0/1125 batches (0.00%)
+    [8] Processed 337/1125 batches (29.96%)
+    [8] Processed 674/1125 batches (59.91%)
+    [8] Processed 1011/1125 batches (89.87%)
+[19:21:04] Epoch [9/50] Loss: 0.9412 Accuracy: 75.87%
+    [9] Processed 0/1125 batches (0.00%)
+    [9] Processed 337/1125 batches (29.96%)
+    [9] Processed 674/1125 batches (59.91%)
+    [9] Processed 1011/1125 batches (89.87%)
+[20:10:27] Epoch [10/50] Loss: 0.9045 Accuracy: 76.62%
+    [10] Processed 0/1125 batches (0.00%)
+    [10] Processed 337/1125 batches (29.96%)
+    [10] Processed 674/1125 batches (59.91%)
+    [10] Processed 1011/1125 batches (89.87%)
+Checkpoint 11 saved to /virtual/drosari3/models/unet-18000-256-16-crop-50-00001/unet-18000-256-16-crop-50-00001-checkpoint_epoch_11.pth
+[21:00:08] Epoch [11/50] Loss: 0.8746 Accuracy: 77.23%
+    [11] Processed 0/1125 batches (0.00%)
+    [11] Processed 337/1125 batches (29.96%)
+    [11] Processed 674/1125 batches (59.91%)
+    [11] Processed 1011/1125 batches (89.87%)
+[21:50:25] Epoch [12/50] Loss: 0.8470 Accuracy: 77.82%
+    [12] Processed 0/1125 batches (0.00%)
+    [12] Processed 337/1125 batches (29.96%)
+    [12] Processed 674/1125 batches (59.91%)
+    [12] Processed 1011/1125 batches (89.87%)
+[22:41:05] Epoch [13/50] Loss: 0.8142 Accuracy: 78.51%
+    [13] Processed 0/1125 batches (0.00%)
+    [13] Processed 337/1125 batches (29.96%)
+    [13] Processed 674/1125 batches (59.91%)
+    [13] Processed 1011/1125 batches (89.87%)
+[23:31:20] Epoch [14/50] Loss: 0.7807 Accuracy: 79.21%
+    [14] Processed 0/1125 batches (0.00%)
+    [14] Processed 337/1125 batches (29.96%)
+    [14] Processed 674/1125 batches (59.91%)
+    [14] Processed 1011/1125 batches (89.87%)
+[00:20:39] Epoch [15/50] Loss: 0.7488 Accuracy: 79.87%
+    [15] Processed 0/1125 batches (0.00%)
+    [15] Processed 337/1125 batches (29.96%)
+    [15] Processed 674/1125 batches (59.91%)
+    [15] Processed 1011/1125 batches (89.87%)
+[01:09:53] Epoch [16/50] Loss: 0.7083 Accuracy: 80.75%
+    [16] Processed 0/1125 batches (0.00%)
+    [16] Processed 337/1125 batches (29.96%)
+    [16] Processed 674/1125 batches (59.91%)
+    [16] Processed 1011/1125 batches (89.87%)
+[01:59:04] Epoch [17/50] Loss: 0.6674 Accuracy: 81.65%
+    [17] Processed 0/1125 batches (0.00%)
+    [17] Processed 337/1125 batches (29.96%)
+    [17] Processed 674/1125 batches (59.91%)
+    [17] Processed 1011/1125 batches (89.87%)
+[02:49:43] Epoch [18/50] Loss: 0.6253 Accuracy: 82.64%
+    [18] Processed 0/1125 batches (0.00%)
+    [18] Processed 337/1125 batches (29.96%)
+    [18] Processed 674/1125 batches (59.91%)
+    [18] Processed 1011/1125 batches (89.87%)
+[03:38:58] Epoch [19/50] Loss: 0.5847 Accuracy: 83.61%
+    [19] Processed 0/1125 batches (0.00%)
+    [19] Processed 337/1125 batches (29.96%)
+    [19] Processed 674/1125 batches (59.91%)
+    [19] Processed 1011/1125 batches (89.87%)
+[04:28:26] Epoch [20/50] Loss: 0.5401 Accuracy: 84.75%
+    [20] Processed 0/1125 batches (0.00%)
+    [20] Processed 337/1125 batches (29.96%)
+    [20] Processed 674/1125 batches (59.91%)
+    [20] Processed 1011/1125 batches (89.87%)
+Checkpoint 21 saved to /virtual/drosari3/models/unet-18000-256-16-crop-50-00001/unet-18000-256-16-crop-50-00001-checkpoint_epoch_21.pth
+[05:17:53] Epoch [21/50] Loss: 0.5008 Accuracy: 85.78%
+    [21] Processed 0/1125 batches (0.00%)
+    [21] Processed 337/1125 batches (29.96%)
+    [21] Processed 674/1125 batches (59.91%)
+    [21] Processed 1011/1125 batches (89.87%)
+[06:07:13] Epoch [22/50] Loss: 0.4591 Accuracy: 86.92%
+    [22] Processed 0/1125 batches (0.00%)
+    [22] Processed 337/1125 batches (29.96%)
+    [22] Processed 674/1125 batches (59.91%)
+    [22] Processed 1011/1125 batches (89.87%)
+[06:56:36] Epoch [23/50] Loss: 0.4212 Accuracy: 87.97%
+    [23] Processed 0/1125 batches (0.00%)
+    [23] Processed 337/1125 batches (29.96%)
+    [23] Processed 674/1125 batches (59.91%)
+    [23] Processed 1011/1125 batches (89.87%)
+[07:46:01] Epoch [24/50] Loss: 0.3897 Accuracy: 88.82%
+    [24] Processed 0/1125 batches (0.00%)
+    [24] Processed 337/1125 batches (29.96%)
+    [24] Processed 674/1125 batches (59.91%)
+    [24] Processed 1011/1125 batches (89.87%)
+[08:35:24] Epoch [25/50] Loss: 0.3649 Accuracy: 89.52%
+    [25] Processed 0/1125 batches (0.00%)
+    [25] Processed 337/1125 batches (29.96%)
+    [25] Processed 674/1125 batches (59.91%)
+    [25] Processed 1011/1125 batches (89.87%)
+[09:24:55] Epoch [26/50] Loss: 0.3437 Accuracy: 90.11%
+    [26] Processed 0/1125 batches (0.00%)
+    [26] Processed 337/1125 batches (29.96%)
+    [26] Processed 674/1125 batches (59.91%)
+    [26] Processed 1011/1125 batches (89.87%)
+[10:14:19] Epoch [27/50] Loss: 0.3167 Accuracy: 90.88%
+    [27] Processed 0/1125 batches (0.00%)
+    [27] Processed 337/1125 batches (29.96%)
+    [27] Processed 674/1125 batches (59.91%)
+    [27] Processed 1011/1125 batches (89.87%)
+[11:03:51] Epoch [28/50] Loss: 0.2955 Accuracy: 91.45%
+    [28] Processed 0/1125 batches (0.00%)
+    [28] Processed 337/1125 batches (29.96%)
+    [28] Processed 674/1125 batches (59.91%)
+    [28] Processed 1011/1125 batches (89.87%)
+[11:53:24] Epoch [29/50] Loss: 0.2794 Accuracy: 91.88%
+    [29] Processed 0/1125 batches (0.00%)
+    [29] Processed 337/1125 batches (29.96%)
+    [29] Processed 674/1125 batches (59.91%)
+    [29] Processed 1011/1125 batches (89.87%)
+[12:42:59] Epoch [30/50] Loss: 0.2534 Accuracy: 92.61%
+    [30] Processed 0/1125 batches (0.00%)
+    [30] Processed 337/1125 batches (29.96%)
+    [30] Processed 674/1125 batches (59.91%)
+    [30] Processed 1011/1125 batches (89.87%)
+Checkpoint 31 saved to /virtual/drosari3/models/unet-18000-256-16-crop-50-00001/unet-18000-256-16-crop-50-00001-checkpoint_epoch_31.pth
+[13:32:25] Epoch [31/50] Loss: 0.2457 Accuracy: 92.77%
+    [31] Processed 0/1125 batches (0.00%)
+    [31] Processed 337/1125 batches (29.96%)
+    [31] Processed 674/1125 batches (59.91%)
+    [31] Processed 1011/1125 batches (89.87%)
+[14:21:51] Epoch [32/50] Loss: 0.2328 Accuracy: 93.16%
+    [32] Processed 0/1125 batches (0.00%)
+    [32] Processed 337/1125 batches (29.96%)
+    [32] Processed 674/1125 batches (59.91%)
+    [32] Processed 1011/1125 batches (89.87%)
+[15:11:22] Epoch [33/50] Loss: 0.2183 Accuracy: 93.58%
+    [33] Processed 0/1125 batches (0.00%)
+    [33] Processed 337/1125 batches (29.96%)
+    [33] Processed 674/1125 batches (59.91%)
+    [33] Processed 1011/1125 batches (89.87%)
+[16:00:41] Epoch [34/50] Loss: 0.2057 Accuracy: 93.93%
+    [34] Processed 0/1125 batches (0.00%)
+    [34] Processed 337/1125 batches (29.96%)
+    [34] Processed 674/1125 batches (59.91%)
+    [34] Processed 1011/1125 batches (89.87%)
+[16:50:14] Epoch [35/50] Loss: 0.1998 Accuracy: 94.08%
+    [35] Processed 0/1125 batches (0.00%)
+    [35] Processed 337/1125 batches (29.96%)
+    [35] Processed 674/1125 batches (59.91%)
+    [35] Processed 1011/1125 batches (89.87%)
+[17:39:45] Epoch [36/50] Loss: 0.1978 Accuracy: 94.13%
+    [36] Processed 0/1125 batches (0.00%)
+    [36] Processed 337/1125 batches (29.96%)
+    [36] Processed 674/1125 batches (59.91%)
+    [36] Processed 1011/1125 batches (89.87%)
+[18:29:19] Epoch [37/50] Loss: 0.1773 Accuracy: 94.72%
+    [37] Processed 0/1125 batches (0.00%)
+    [37] Processed 337/1125 batches (29.96%)
+    [37] Processed 674/1125 batches (59.91%)
+    [37] Processed 1011/1125 batches (89.87%)
+[19:20:53] Epoch [38/50] Loss: 0.1618 Accuracy: 95.14%
+    [38] Processed 0/1125 batches (0.00%)
