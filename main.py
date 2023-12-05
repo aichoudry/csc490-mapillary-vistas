@@ -83,7 +83,7 @@ model.eval()
 validation_dataset = MapillaryVistasDataset(MapillaryVistasDataset.VALIDATION,
                                             transform=IMAGE_TRANSFORM,
                                             mask_transform=MAKS_TRANSFORM)
-validation_loader = DataLoader(validation_dataset, batch_size=BATCH_SIZE, shuffle=True)
+validation_loader = DataLoader(validation_dataset, batch_size=1, shuffle=True)
 mIoU_value = evaluate_model(model, 
                             validation_loader, 
                             device, 
