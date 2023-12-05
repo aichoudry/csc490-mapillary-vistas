@@ -1,0 +1,111 @@
+dh2010pc02: 
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra-extra.log with 0.5 dice + CE
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra3.log with DICE + CrossEntropy
+model-18000-RandomCrop-256-18-00001-100-wCE -> extra.log with DiceLoss + CrossEntropyLoss
+model-18000-RandomCrop-256-20-1e-05-100-wCE -> output4.log
+// unet-18000-256-20-crop-75-00005 -> output3.log
+unet-18000-256-20-crop-150-00005 => output2.log > a.log for validation
+
+
+dh2010pc45:
+model-18000-RandomCrop-256-18-1e-05-100-wCE -> extra-extra.log with half dice and CE
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra3.log with half diceloss and half crossentropy
+
+
+dh2010pc46:
+// model-18000-RandomCrop-256-18-00001-100-wCE -> extra.log with DiceLoss
+model-18000-RandomCrop-256-20-5e-05-100-wCE -> output4.log
+unet-18000-256-20-crop-75-1e-05 -> output3.log > a2.log for validation
+unet-18000-256-20-crop-150-1e-05 -> output2.log
+
+
+dh2010pc49:
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra-extra.log with custom DICE Loss
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra3.log with DICE Loss
+
+
+dh2010pc50: 
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra3.log with JaccardLoss
+model-18000-RandomCrop-256-18-00001-100-wCE -> extra.log with JaccardLoss
+model-18000-RandomCrop-256-20-00001-100-wCE -> output4.log
+unet-18000-256-20-crop-150-00001 -> output2.log
+
+
+dh2020pc01:
+model-18000-RandomCrop-256-20-00005-100-wCE -> output4.log
+unet-18000-256-20-crop-75-00001 -> output3.log
+// unet-18000-256-20-crop-150-0000375 -> output2.log
+
+
+dh2020pc02: OFF
+// model-18000-RandomCrop-256-20-0001-100-wCE -> output4.log
+
+
+dh2020pc03:
+model-18000-LeftCrop-256-20-1e-05-100-wCE -> output4.log -> unfortunately stopped it before finished
+
+
+dh2020pc06:
+model-18000-LeftCrop-256-20-5e-05-100-wCE -> output4.log
+unet-18000-256-20-crop-75-0000175 -> output3.log
+unet-18000-256-20-crop-150-0000175 -> output2.log
+
+
+dh2020pc21: 
+model-18000-CentreCrop-256-18-5e-05-100-wCE -> extra.log DICE + CE Loss
+model-18000-LeftCrop-256-20-00001-100-wCE -> output4.log
+unet-18000-256-20-crop-75-000025 -> output3.log
+unet-18000-256-20-crop-150-000025 -> output2.log
+unet-18000-256-16-crop-50-000025 -> output.log
+
+
+dh2020pc22: OFF
+unet-18000-256-16-crop-50-0000375 -> output.log
+
+
+dh2020pc23: OFF
+model-18000-LeftCrop-256-20-00005-100-wCE -> output4.log
+unet-18000-256-20-crop-75-5e-05 -> output3.log
+// unet-18000-256-20-crop-150-1e-05 -> output2.log
+unet-18000-256-20-crop-50-1e-05 -> output.log
+
+
+dh2020pc25:
+model-18000-CentreCrop-256-18-5e-05-100-wCE -> extra.log DICE Loss
+model-18000-LeftCrop-256-20-0001-100-wCE -> output4.log
+unet-18000-256-20-crop-75-75e-05 -> output3.log
+
+
+dh2020pc26:
+model-18000-CentreCrop-256-18-00001-100-wCE -> extra.log JaccardLoss
+model-18000-RightCrop-256-20-1e-05-100-wCE -> output4.log
+unet-18000-256-20-crop-75-0000375 -> output3.log
+unet-18000-256-20-crop-150-0000375 -> output2.log
+
+
+dh2026pc10:
+model-18000-CentreCrop-256-18-5e-05-100-wCE -> extra.log JaccardLoss
+model-18000-RightCrop-256-20-5e-05-100-wCE -> output4.log
+
+
+dh2026pc12:
+model-18000-RightCrop-256-20-00005-100-wCE -> output4.log
+
+
+dh2026pc16:
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra-extra.log half and half ce and dice
+model-18000-RandomCrop-256-18-5e-05-100-wCE -> extra3.log 0.5 CE + DICE
+model-18000-CentreCrop-256-18-00001-100-wCE -> extra.log DICE + CE Loss
+model-18000-RightCrop-256-20-00001-50-wCE -> output4.log
+
+dh2026pc17:
+model-18000-CentreCrop-256-18-00001-100-wCE -> extra.log DICE Loss
+model-18000-RandomCrop-256-20-0001-50-wCE -> output4.log
+
+
+
+
+
+
+
+

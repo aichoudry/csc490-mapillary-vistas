@@ -1,0 +1,28 @@
+dh2020pc06: 18000 images, 256 dimension, 20 batch, 150 epochs, learning rate 0.00025 > output6.log
+18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.00025 > output5.log
+2000 images, 256 dimension, 20 batch, 25 epochs, learning rate 0.0005 > output4.log
+2000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.0005 > output3.log
+2000 images, 256 dimension, 16 batch, 100 epochs, learning rate 0.0005 > output.log
+2000 images, 256 dimension, 16 batch, 100 epochs, learning rate 0.0001 > output2.log
+
+dh2010pc50: 18000 images, 256 dimension, 20 batch, 150 epochs, learning rate 0.0001 > output.log
+2000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.001 > output3.log < off
+2000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.001 > output3.log
+2000 images, 256 dimension, 16 batch, 100 epochs, learning rate 0.001 > output2.log
+
+dh2026pc21: 18000 images, 256 dimension, 20 batch, 150 epochs, learning rate 0.0005 > output4.log
+18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.0005 > output.log
+18000 images, 256 dimension, 16 batch, 50 epochs, learning rate 0.00075 > output2.log < 30 epoch < trying again output3.log
+
+dh2010pc02: 18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.000175 > output.log
+18000 images, 256 dimension, 16 batch, 50 epochs, learning rate 0.0001 > output2.log < 30 epoch < trying again output3.log
+
+dh2010pc46: Choudry
+18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.0005 > output5.log
+9000 images, 256 dimension, 16 batch, 100 epochs, learning rate 0.0005 > output3.log < 30 epoch < trying again < output.log
+18000 images, 256 dimension, 16 batch, 50 epochs, learning rate 0.0005 output2.log
+
+dh2020pc01: 18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.000375 > output7.log 
+18000 images, 256 dimension, 20 batch, 100 epochs, learning rate 0.0001 > output6.log
+18000 images, 256 dimension, 20 batch, 50 epochs, learning rate 0.0001 > output5.log < 18 epoch < trying again < output.log
+18000 images, 256 dimension, 16 batch, 50 epochs, learning rate 0.0001 < 38 epoch output4.log
