@@ -3,6 +3,8 @@
 
 #### Problem
   The problem we addressed is semantic segmentation for street scenes, namely, pixel by pixel segmentation of a street image into a set of classes. 
+#### The code
+The main script is main.py which can be run on the lab machines that have the dataset on it. Update the train.ini file for the parameters of training.
 
 #### Mapillary Vistas Dataset
 Dataset here: https://www.mapillary.com/dataset/vistas
