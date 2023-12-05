@@ -1,16 +1,19 @@
 import torch
-from tqdm.notebook import tqdm
 import os
 from datetime import datetime
-from evaluation import mean_iou
 
 
-def train_model(model, epochs, learning_rate, criterion, training_loader, optimizer, device, name, epoch_save_interval=10, checkpoint_path=None, save=True):
+def train_model(model, epochs, learning_rate, criterion, training_loader, optimizer, device, name, save_path,
+                weights=None, 
+                epoch_save_interval=10, 
+                checkpoint_path=None):
     accuracies = []
     losses = []
 
-    model_directory = os.path.join("/virtual/csc490_mapillary/models", name)
-    os.makedirs(model_directory, exist_ok=True)
+    os.makedirs(save_path, exist_ok=True)
+
+    checkpoints_directory = os.path.join(save_path, "checkpoints")
+    os.makedirs(checkpoints_directory, exist_ok=True)
 
     model.train()
     
@@ -45,7 +48,7 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
             outputs = model(images)
 
             # Compute loss
-            loss = criterion(outputs, masks)
+            loss = criterion(outputs, masks, weight=weights)
 
             # Backward pass and optimize
             loss.backward()
@@ -65,9 +68,9 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
         accuracies.append(epoch_accuracy)
 
         # Save checkpoint at the end of each epoch
-        if save and epoch % epoch_save_interval == 0:
-            checkpoint_filename = f"{name}-checkpoint_epoch_{epoch + 1}.pth"
-            checkpoint_save = os.path.join(model_directory, checkpoint_filename)
+        if epoch % epoch_save_interval == 0:
+            checkpoint_filename = f"checkpoint_epoch_{epoch + 1}.pth"
+            checkpoint_save = os.path.join(checkpoints_directory, checkpoint_filename)
             try:
                 torch.save({
                     'epoch': epoch + 1,
@@ -83,16 +86,14 @@ def train_model(model, epochs, learning_rate, criterion, training_loader, optimi
         formatted_time = datetime.now().strftime("%H:%M:%S")
         print(f"[{formatted_time}] Epoch [{epoch + 1}/{epochs}] Loss: {epoch_loss:.4f} Accuracy: {epoch_accuracy:.2f}%")
 
-
-    if save:
-        result = {
-            'state_dict': model.state_dict(),
-            'accuracies': accuracies,
-            'losses': losses
-        }
-        torch.save(result, os.path.join(model_directory, f'{name}.pth'))
+    result = {
+        'state_dict': model.state_dict(),
+        'accuracies': accuracies,
+        'losses': losses
+    }
+    torch.save(result, os.path.join(save_path, f'{name}.pth'))
     
-    return accuracies, losses
+    return model, losses, accuracies
 
 def load_checkpoint(checkpoint_path, model, optimizer):
     if os.path.isfile(checkpoint_path):
