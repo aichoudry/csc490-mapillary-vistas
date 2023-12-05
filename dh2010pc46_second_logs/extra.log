@@ -1,0 +1,97 @@
+Opening config.ini...
+MAX_IMAGES: 18000
+BATCH_SIZE: 18
+LEARNING_RATE: 0.0001
+EPOCHS: 100
+TRANSFORM: RandomCrop
+IMAGE_DIMEN: 256
+EVALUATION_IMAGES: ['_gcgraos355QHyu7iFMK1w', '_QDf_pTzs-sEyBubXqmqxA', '_wbVgGy7xrO_C_gsz-BCvA', 'FYoB0UGu40k9nKurB8pucw', '1pFw6qQwFQ__QdnYYB7YLA', '-C-x3xSPFIEjqbyVC5PRaQ', '_Uu1yfgmkbji9nkUT3Tikw', '_nDuQstcKZ714CoL0G5iZg']
+CHECKPOINT_SAVE_INTERVAL: 10
+MODEL_LOCATION: /virtual/drosari3/models/model-18000-RandomCrop-256-18-00001-100-wCE
+MODEL_NAME: model-18000-RandomCrop-256-18-00001-100-wCE
+Training model-18000-RandomCrop-256-18-00001-100-wCE...
+epochs=100 lr=0.0001, error=DiceLoss()
+    [0] Processed 0/1000 batches (0.00%)
+    [0] Processed 300/1000 batches (30.00%)
+    [0] Processed 600/1000 batches (60.00%)
+    [0] Processed 900/1000 batches (90.00%)
+Checkpoint 1 saved to /virtual/drosari3/models/model-18000-RandomCrop-256-18-00001-100-wCE/checkpoints/checkpoint_epoch_1.pth
+[18:56:47] Epoch [1/100] Loss: 0.2697 Accuracy: 49.03%
+    [1] Processed 0/1000 batches (0.00%)
+    [1] Processed 300/1000 batches (30.00%)
+    [1] Processed 600/1000 batches (60.00%)
+    [1] Processed 900/1000 batches (90.00%)
+[19:18:12] Epoch [2/100] Loss: 0.2629 Accuracy: 54.60%
+    [2] Processed 0/1000 batches (0.00%)
+    [2] Processed 300/1000 batches (30.00%)
+    [2] Processed 600/1000 batches (60.00%)
+    [2] Processed 900/1000 batches (90.00%)
+[19:40:09] Epoch [3/100] Loss: 0.2544 Accuracy: 56.15%
+    [3] Processed 0/1000 batches (0.00%)
+    [3] Processed 300/1000 batches (30.00%)
+    [3] Processed 600/1000 batches (60.00%)
+    [3] Processed 900/1000 batches (90.00%)
+[20:01:35] Epoch [4/100] Loss: 0.2517 Accuracy: 56.93%
+    [4] Processed 0/1000 batches (0.00%)
+    [4] Processed 300/1000 batches (30.00%)
+    [4] Processed 600/1000 batches (60.00%)
+    [4] Processed 900/1000 batches (90.00%)
+[20:23:42] Epoch [5/100] Loss: 0.2470 Accuracy: 57.09%
+    [5] Processed 0/1000 batches (0.00%)
+    [5] Processed 300/1000 batches (30.00%)
+    [5] Processed 600/1000 batches (60.00%)
+    [5] Processed 900/1000 batches (90.00%)
+[20:44:44] Epoch [6/100] Loss: 0.2463 Accuracy: 58.39%
+    [6] Processed 0/1000 batches (0.00%)
+    [6] Processed 300/1000 batches (30.00%)
+    [6] Processed 600/1000 batches (60.00%)
+    [6] Processed 900/1000 batches (90.00%)
+[21:05:35] Epoch [7/100] Loss: 0.2413 Accuracy: 59.59%
+    [7] Processed 0/1000 batches (0.00%)
+    [7] Processed 300/1000 batches (30.00%)
+    [7] Processed 600/1000 batches (60.00%)
+    [7] Processed 900/1000 batches (90.00%)
+[21:26:54] Epoch [8/100] Loss: 0.2401 Accuracy: 60.61%
+    [8] Processed 0/1000 batches (0.00%)
+    [8] Processed 300/1000 batches (30.00%)
+    [8] Processed 600/1000 batches (60.00%)
+    [8] Processed 900/1000 batches (90.00%)
+[21:47:49] Epoch [9/100] Loss: 0.2369 Accuracy: 61.09%
+    [9] Processed 0/1000 batches (0.00%)
+    [9] Processed 300/1000 batches (30.00%)
+    [9] Processed 600/1000 batches (60.00%)
+    [9] Processed 900/1000 batches (90.00%)
+[22:08:56] Epoch [10/100] Loss: 0.2356 Accuracy: 61.80%
+    [10] Processed 0/1000 batches (0.00%)
+    [10] Processed 300/1000 batches (30.00%)
+    [10] Processed 600/1000 batches (60.00%)
+    [10] Processed 900/1000 batches (90.00%)
+Checkpoint 11 saved to /virtual/drosari3/models/model-18000-RandomCrop-256-18-00001-100-wCE/checkpoints/checkpoint_epoch_11.pth
+[22:30:11] Epoch [11/100] Loss: 0.2353 Accuracy: 62.08%
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/usr/lib/python3.10/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/usr/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 1659635) is killed by signal: Killed. 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/virtual/drosari3/csc490-mapillary-vistas/main.py", line 78, in <module>
+    TRAINED_MODEL, TRAINING_LOSSES, TRAINING_ACCURACIES = train_model(model=model, 
+  File "/virtual/drosari3/csc490-mapillary-vistas/train.py", line 39, in train_model
+    for batch_index, (images, masks) in enumerate(training_loader):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1145, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 1659635) exited unexpectedly
