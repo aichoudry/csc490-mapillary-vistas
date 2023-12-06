@@ -1,0 +1,23 @@
+unet-18000-256-20-crop-150-00005
+Evaluating ../models/unet-18000-256-20-crop-150-00005/unet-18000-256-20-crop-150-00005.pth...
+Testing Image: 0/100
+Testing Image: 5/100
+Testing Image: 10/100
+Testing Image: 15/100
+Testing Image: 20/100
+Testing Image: 25/100
+Testing Image: 30/100
+Testing Image: 35/100
+Testing Image: 40/100
+Testing Image: 45/100
+Testing Image: 50/100
+Testing Image: 55/100
+Testing Image: 60/100
+Testing Image: 65/100
+Testing Image: 70/100
+Testing Image: 75/100
+Testing Image: 80/100
+Testing Image: 85/100
+Testing Image: 90/100
+Testing Image: 95/100
+Validation mIoU: 0.2906
