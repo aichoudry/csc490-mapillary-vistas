@@ -45,6 +45,12 @@ The logs folder contains the logs for models. The names of the folders in the lo
 #### Results
 The final model we settled on was trained on 18000 images for 100 epochs with a batch size of 20. It had a training rate of 0.0001 with a Cross Entropy Loss function. We used RandomCrop as the cropping technique on 256 by 256 images. The model can be found under folder within the more_logs folder with the name model-18000-RandomCrop-256-20-00001-100-wCE. 
 
+This is the loss:
+![Output Example](https://github.com/aichoudry/csc490-mapillary-vistas/blob/main/more_logs/model-18000-RandomCrop-256-20-00001-100-wCE/training_loss_graph.png?raw=true)
+
+This is the accuracy:
+![Output Example](https://github.com/aichoudry/csc490-mapillary-vistas/blob/main/more_logs/model-18000-RandomCrop-256-20-00001-100-wCE/training_accuracy_graph.png?raw=true)
+
 Here are some of the results of this model:
 ![Output Example](https://github.com/aichoudry/csc490-mapillary-vistas/blob/main/more_logs/model-18000-RandomCrop-256-20-00001-100-wCE/image_results/FYoB0UGu40k9nKurB8pucw.png?raw=true)
 ![Output Example](https://github.com/aichoudry/csc490-mapillary-vistas/blob/main/more_logs/model-18000-RandomCrop-256-20-00001-100-wCE/image_results/1pFw6qQwFQ__QdnYYB7YLA.png?raw=true)
